@@ -19,6 +19,8 @@ export const Container = styled.div<ContainerProps>`
     nav {
       a {
         color: #fff;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 10px;
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
@@ -29,6 +31,10 @@ export const Container = styled.div<ContainerProps>`
 
         &:hover {
           opacity: 0.6;
+        }
+
+        &.active {
+          border-bottom-color: #ff872c;
         }
       }
     }
